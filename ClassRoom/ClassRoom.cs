@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace ClassRoom
 {
-    class ClassRoom
+    public class ClassRoom
     {
         private string _classname;
-        private List<ClassRoom> _class;
+        private List<Student> _class;
         private DateTime _semesterstart;
 
-        public ClassRoom(string classname, List<ClassRoom> @class, DateTime semesterstart)
+        public ClassRoom(string classname, List<Student> @class, DateTime semesterstart)
         {
             _classname = classname;
             _class = @class;
@@ -20,7 +20,7 @@ namespace ClassRoom
         }
 
         public string Classname { get => _classname; set => _classname = value; }
+        public List<Student> Class { get => _class; set => _class = value; }
         public DateTime Semesterstart { get => _semesterstart; set => _semesterstart = value; }
-        internal List<ClassRoom> Class { get => _class; set => _class = value; }
     }
 }
