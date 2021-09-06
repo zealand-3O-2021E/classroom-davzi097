@@ -24,7 +24,14 @@ namespace ClassRoom
             students.Add(Paulina);
             students.Add(Nico);
 
+            Console.WriteLine($"Class name :{classRoom.Classname}, Semester start : {classRoom.Semesterstart}");
+            Console.WriteLine("List of students + birthmonth + birthday");
+            foreach (Student s in students)
+            {
+                Console.WriteLine(s.Name+" "+s.Birthmonth+" "+s.Birthday);
+            }
 
+            Console.ReadKey();
         }
     }
 }
